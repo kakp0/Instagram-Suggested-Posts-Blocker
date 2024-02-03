@@ -11,7 +11,7 @@ const removeElements = () => {
   });
 };
 
-//mutation observer initilisation to run code each time something happens on the page
+//mutation observer initilisation to run code each time something happens on the page to keep them out for good
 const observer = new MutationObserver(removeElements);
 const observerOptions = { childList: true, subtree: true };
 observer.observe(document, observerOptions);
